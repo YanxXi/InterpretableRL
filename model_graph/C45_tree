@@ -1,0 +1,20 @@
+digraph G {
+	0 [label="pole velocity"]
+	1 [label="cart velocity"]
+	0 -> 1 [label="<=0.132"]
+	2 [label="pole angle"]
+	1 -> 2 [label="<=0.06"]
+	3 [label="cart position"]
+	2 -> 3 [label="<=-0.001"]
+	4 [label=0.0]
+	3 -> 4 [label="<=-0.04"]
+	5 [label=1.0]
+	3 -> 5 [label=">-0.04"]
+	6 [label=1.0]
+	2 -> 6 [label=">-0.001"]
+	7 [label=0.0]
+	1 -> 7 [label=">0.06"]
+	8 [label=1.0]
+	0 -> 8 [label=">0.132"]
+	rankdir=TB rankstep=0
+}
